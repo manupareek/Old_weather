@@ -3,12 +3,16 @@ $(function() {
     // "data" is an object that holds all the information you need. Here, we
     // write it out to the console for easy viewing.
     console.log(data);
+
+    // We also set a window-level variable so we can use it in the console,
+    // by typing data
+    window.data = data;
     
     // Put your code here. Don't change any other code in this file. You will be sad.
     var markup = "<p>The weather report... " + "will be here when I finish my homework.</p>";
-    // End of your code. No, really. Don't change anything below this, or above line 8.
+    // End of your code. No, really. Don't change anything below this, or above line 11.
 
-    // Take the contents of the "markup" variable (which should contain HTML) 
+    // Takes the contents of the "markup" variable (which should contain HTML) 
     // and write it out to the page.
     $('.weather-report').html(markup);
   }
